@@ -7,6 +7,7 @@ framework:
   version: "1.96.1"
   libraries:
     - name: sap.m
+    - name: sap.tnt
     - name: sap.ui.core
     - name: sap.ui.unified
     - name: themelib_sap_fiori_3

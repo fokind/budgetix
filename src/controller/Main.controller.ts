@@ -1,15 +1,18 @@
-import MessageBox from "sap/m/MessageBox";
 import Controller from "sap/ui/core/mvc/Controller";
+import UIComponent from "sap/ui/core/UIComponent";
+import JSONModel from "sap/ui/model/json/JSONModel";
 
 /**
  * @namespace fokind.budgetix.controller
  */
 export default class MainController extends Controller {
   public onInit(): void {
-    // TODO
+    UIComponent.getRouterFor(this)
+      .getRoute("main")
+      .attachPatternMatched(() => this._onRouteMatched(), this);
   }
 
-  public sayHello(): void {
-    MessageBox.show("Hello World!");
+  private _onRouteMatched(): void {
+    (this.getView().getModel("view") as JSONModel).setProperty("/tab", "main");
   }
 }

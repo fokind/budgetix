@@ -42,7 +42,8 @@
         "sap.ui.core": {},
         "sap.ui.layout": {},
         "sap.ui.unified": {},
-        "sap.m": {}
+        "sap.m": {},
+        "sap.tnt": {}
       }
     },
     "handleValidation": true,
@@ -59,6 +60,9 @@
       },
       "": {
         "dataSource": "mainService"
+      },
+      "view": {
+        "type": "sap.ui.model.json.JSONModel"
       }
     },
     "routing": {

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "2021-12-01",
+    "OpeningBalance": 2000,
+    "Incomes": 10000,
+    "Expenses": 87000,
+    "Profit": 13000,
+    "Balance": 15000
+  },
+  {
+    "Id": "2022-01-01",
+    "OpeningBalance": 15000,
+    "Incomes": 10000,
+    "Expenses": 60000,
+    "Profit": 40000,
+    "Balance": 55000
+  }
+]
