@@ -1,0 +1,14 @@
+{
+  "generator-ui5-ts-app": {
+    "application": "budgetix",
+    "namespace": "com",
+    "framework": "OpenUI5",
+    "frameworkVersion": "1.96.1",
+    "author": "Dmitry Fokin",
+    "tstypes": "@openui5/ts-types-esm",
+    "tstypesVersion": "1.96.1",
+    "appId": "fokind.budgetix",
+    "appURI": "fokind/budgetix",
+    "setupCompleted": true
+  }
+}
