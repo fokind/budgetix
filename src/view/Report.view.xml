@@ -1,0 +1,11 @@
+<mvc:View controllerName="fokind.budgetix.controller.Report" displayBlock="true" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+  <List id="list" items="{/Months}" noDataText="-">
+    <items>
+      <ObjectListItem number="{Balance}" title="{Id}">
+        <attributes>
+          <ObjectAttribute text="-" />
+        </attributes>
+      </ObjectListItem>
+    </items>
+  </List>
+</mvc:View>

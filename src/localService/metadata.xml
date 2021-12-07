@@ -3,16 +3,29 @@
     <Schema Namespace="BudgetixModel" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
       <EntityType Name="Record">
         <Key>
-          <PropertyRef Name="Name" />
+          <PropertyRef Name="Id" />
         </Key>
-        <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+        <Property Name="Id" Type="Edm.String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+        <Property Name="Name" Type="Edm.String" Nullable="true" MaxLength="40" FixedLength="false" Unicode="true" />
         <Property Name="Amount" Type="Edm.Decimal" Precision="19" Scale="4" />
         <Property Name="Date" Type="Edm.String" Nullable="true" MaxLength="10" FixedLength="true" Unicode="true" />
+      </EntityType>
+      <EntityType Name="ReportItem">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+        <Property Name="OpeningBalance" Type="Edm.Decimal" Precision="19" Scale="4" />
+        <Property Name="Incomes" Type="Edm.Decimal" Precision="19" Scale="4" />
+        <Property Name="Expenses" Type="Edm.Decimal" Precision="19" Scale="4" />
+        <Property Name="Profit" Type="Edm.Decimal" Precision="19" Scale="4" />
+        <Property Name="Balance" Type="Edm.Decimal" Precision="19" Scale="4" />
       </EntityType>
     </Schema>
     <Schema Namespace="Fokind.Budgetix.Model" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
       <EntityContainer Name="BudgetixEntities" m:IsDefaultEntityContainer="true" p6:LazyLoadingEnabled="true" xmlns:p6="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
         <EntitySet Name="Records" EntityType="BudgetixModel.Record" />
+        <EntitySet Name="Months" EntityType="BudgetixModel.ReportItem" />
       </EntityContainer>
     </Schema>
   </edmx:DataServices>

@@ -79,12 +79,21 @@
           "pattern": "",
           "name": "main",
           "target": "main"
+        },
+        {
+          "pattern": "report",
+          "name": "report",
+          "target": "report"
         }
       ],
       "targets": {
         "main": {
           "viewName": "Main",
           "viewLevel": 1
+        },
+        "report": {
+          "viewName": "Report",
+          "viewLevel": 2
         }
       }
     }
