@@ -3,7 +3,7 @@
     <items>
       <ObjectListItem number="{Amount}" title="{Name}">
         <attributes>
-          <ObjectAttribute text="-" />
+          <ObjectAttribute text="Every {Every} {LengthInterval} from {Date}" />
         </attributes>
       </ObjectListItem>
     </items>

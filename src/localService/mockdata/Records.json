@@ -1,12 +1,29 @@
 [
   {
+    "Id": "0",
     "Name": "Pineapple",
     "Amount": 87.2,
-    "Date": "2015-04-01"
+    "Date": "2021-12-07",
+    "IsRecur": true,
+    "LengthInterval": "week",
+    "Every": 1
   },
   {
+    "Id": "1",
     "Name": "Milk",
     "Amount": 9.9,
-    "Date": "2015-02-18"
+    "Date": "2021-12-07",
+    "IsRecur": true,
+    "LengthInterval": "day",
+    "Every": 3
+  },
+  {
+    "Id": "2",
+    "Name": "Milk2",
+    "Amount": 9.9,
+    "Date": "2021-12-07",
+    "IsRecur": true,
+    "LengthInterval": "month",
+    "Every": 1
   }
 ]
