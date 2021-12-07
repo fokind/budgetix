@@ -8,6 +8,16 @@
     "description": "{{app_description}}",
     "applicationVersion": {
       "version": "1.0.0"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/api",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "2.0",
+          "localUri": "localService/metadata.xml"
+        }
+      }
     }
   },
   "sap.ui": {
@@ -46,6 +56,9 @@
         "settings": {
           "bundleName": "fokind.budgetix.i18n.i18n"
         }
+      },
+      "": {
+        "dataSource": "mainService"
       }
     },
     "routing": {}
