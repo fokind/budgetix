@@ -1,4 +1,3 @@
-import MessageBox from "sap/m/MessageBox";
 import Controller from "sap/ui/core/mvc/Controller";
 import AppComponent from "../Component";
 
@@ -11,9 +10,5 @@ export default class AppController extends Controller {
     this.getView().addStyleClass(
       (this.getOwnerComponent() as AppComponent).getContentDensityClass()
     );
-  }
-
-  public sayHello(): void {
-    MessageBox.show("Hello World!");
   }
 }

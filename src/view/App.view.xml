@@ -1,13 +1,3 @@
 <mvc:View controllerName="fokind.budgetix.controller.App" displayBlock="true" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
-  <App id="app">
-    <List id="list" items="{/Invoices}" noDataText="-">
-      <items>
-        <ObjectListItem number="{ExtendedPrice}" title="{ProductName}">
-          <attributes>
-            <ObjectAttribute text="{ShipperName}" />
-          </attributes>
-        </ObjectListItem>
-      </items>
-    </List>
-  </App>
+  <App id="app" />
 </mvc:View>
